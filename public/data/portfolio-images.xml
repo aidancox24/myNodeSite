@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<portfolio-photos>
+
+    <photo>
+        <highres>
+            <src>images/farm.jpg</src>
+        </highres>
+        <lowres>
+            <src>images/farm-1600x900.jpg</src>
+        </lowres>
+            <alt>farm</alt>
+    </photo>
+
+    <photo>
+        <highres>
+            <src>images/forest.JPG</src>
+        </highres>
+        <lowres>
+            <src>images/forest-1600x900.jpg</src>
+        </lowres>
+            <alt>forest</alt>
+    </photo>
+
+    <photo>
+        <highres>
+            <src>images/river.JPG</src>
+        </highres>
+        <lowres>
+            <src>images/river-1600x900.jpg</src>
+        </lowres>
+            <alt>river</alt>
+    </photo>
+
+    <photo>
+        <highres>
+            <src>images/trees.JPG</src>
+        </highres>
+        <lowres>
+            <src>images/trees-1600x900.jpg</src>
+        </lowres>
+            <alt>tress</alt>
+    </photo>
+
+    <photo>
+        <highres>
+            <src>images/house.JPG</src>
+        </highres>
+        <lowres>
+            <src>images/house-1600x900.jpg</src>
+        </lowres>
+            <alt>house</alt>
+    </photo>
+
+    <photo>
+        <highres>
+            <src>images/sky.JPG</src>
+        </highres>
+        <lowres>
+            <src>images/sky-1600x900.jpg</src>
+        </lowres>
+            <alt>sky</alt>
+    </photo>
+
+</portfolio-photos>

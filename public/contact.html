@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Design</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/custom-elements.css" />
+    <script src="https://kit.fontawesome.com/626b14f90d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+    <div id="contact-us">
+        <h1 id="contact-header">Contact</h1>
+        <form id="contact-form" onsubmit="handleContactFormSubmit(event)">
+            <input class="contact-form-input" type="text" id="contact-name" name="Name" placeholder="Name">
+            <input class="contact-form-input" type="email" id="contact-email" name="Email" placeholder="Email">
+            <textarea class="contact-form-input message" id="contact-message" name="Message"
+                placeholder="Message"></textarea>
+
+            <div id="error-messages-container"></div>
+
+            <input id="contact-form-submit" type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <nav id="sidenav"></nav>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>Window.jQuery || document.write('<script src="scripts/jquery-3.6.3.js"><\/script>');</script>
+    <script src="scripts/custom-elements.js"></script>
+    <script src="scripts/contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    color: #fff;
+    background-color: transparent;
+    transition: background-color 0.5s;
+}
+
+/* Change background color of navbar */
+#navbar.scrolling {
+    background-color: #000000;
+}
+
+/* Change font color of navbar items */
+#navbar.scrolling .navbar-item {
+    color: white;
+}
+
+#navbar.scrolling .navbar-brand img {
+    content:url("../images/logo-white.png");
+}
+
+/* Change background color of navbar items */
+#navbar.scrolling .navbar-item:hover,
+#navbar.scrolling .navbar-item.selected,
+#navbar.scrolling .navbar-dropdown-content {
+    background-color: rgb(74, 97, 99);
+}
+
+/* Change background color of hamburger menu */
+#navbar.scrolling .navbar-item.open-sidenav-button {
+    color: #ffffff;
+}
+
+/* Brand logo */
+.navbar-brand {
+    display: inline-block;
+}
+
+.navbar-brand img {
+    width: 250px;
+    margin-left: 8px;
+}
+
+/* Navbar menu */
+.navbar-menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    user-select: none;
+}
+
+/* Navbar menu items */
+.navbar-item {
+    height: 100%;
+    list-style: none;
+    padding: 10px 20px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.navbar-item:hover {
+    background-color: rgb(23, 26, 23, 0.1);
+}
+
+.navbar-item.selected {
+    background-color: rgb(23, 26, 23, 0.1)
+}
+
+/* Navbar links */
+.navbar-link {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+/* Navbar dropdown */
+.navbar-link.navbar-dropdown {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    margin: 8px;
+    padding: 8px;
+}
+
+.navbar-item.navbar-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Navbar dropdown content */
+.navbar-dropdown-content {
+    display: none;
+    position: absolute;
+    width: 126px;
+    background-color: rgb(23, 26, 23, 0.1);
+    padding: 5px auto;
+    margin-top: 10px;
+    left: 0;
+}
+
+/* Navbar dropdown links */
+.navbar-link.navbar-dropdown:hover {
+    background-color: #F9AF71;
+}
+
+/* Hamburger menu for small screens */
+.navbar-item.open-sidenav-button {
+    display: none;
+    cursor: pointer;
+}
+
+/* Hide navbar links and dropdown on small screens */
+@media screen and (max-width: 1000px) {
+
+    /* Hide navbar items */
+    .navbar-item,
+    .navbar-dropdown {
+        display: none;
+    }
+
+    /* Show hamburger menu button */
+    .navbar-item.open-sidenav-button {
+        display: block;
+    }
+}
+
+/* Sidenav */
+#sidenav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+    width: 0;
+    background-color: #F9FAF4;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+/* Show the sidenav */
+#sidenav.show {
+    /* width: 350px; */
+    width: 100%;
+}
+
+/* Sidenav menu */
+.sidenav-menu {
+    margin-top: 40px;
+}
+
+/* Sidenav items */
+.sidenav-item {
+    display: block;
+    padding: 8px;
+    margin: 8px 40px;
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.sidenav-item:hover {
+    background-color: rgb(23, 26, 23, 0.1);
+}
+
+/* Sidenav links */
+.sidenav-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Close sidenav button */
+.sidenav-menu .close-sidenav-btn {
+    position: absolute;
+    top: 24px;
+    right: 25px;
+    /* color: #ffffff; */
+    cursor: pointer;
+}
+
+/* Sidenav dropdowns */
+.sidenav-item.sidenav-dropdown {
+    position: relative;
+}
+
+.sidenav-item.sidenav-dropdown.selected {
+    background-color: rgb(23, 26, 23, 0.1);
+}
+
+/* Sidenav dropdown content */
+.sidenav-dropdown-content {
+    display: none;
+    position: relative;
+    width: 100%;
+    margin-top: 8px;
+    /* background-color: #4A6163; */
+    padding: 2px;
+}
+
+/* Sidenav dropdown links */
+.sidenav-link.dropdown {
+    display: block;
+    padding: 12px 16px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.sidenav-link.dropdown:hover {
+    background-color: #F9AF71;
+}
+
+/* Footer */
+#footer {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer column headings */
+.footer-column h4 {
+    padding: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-column ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-column li {
+    padding: 4px;
+    font-size: 14px;
+}
+
+/* Footer column links */
+.footer-column a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-container a:hover {
+    color: #F9AF71;
+    cursor: pointer;
+}
+
+/* Footer Brand */
+.footer-brand img {
+    margin: 8px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.footer-brand h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+}
+
+/* Footer contact */
+.footer-contact {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.footer-contact a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Footer social */
+.footer-social a {
+    cursor: pointer;
+}
+
+.footer-social img {
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 4px;
+}

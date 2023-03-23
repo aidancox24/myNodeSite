@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Design</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/custom-elements.css" />
+    <script src="https://kit.fontawesome.com/626b14f90d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+
+
+    <div id="booking">
+        <h1 id="bookingServiceName"></h1>
+
+        <div id="apptDateAndTime">
+            <h2>Select a Date and Time</h2>
+            <div id="apptDate">
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <i id="prevMonth" class="fa-solid fa-angle-left"></i>
+                        <h1 id="monthYear"></h1>
+                        <i id="nextMonth" class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <table class="calendar">
+                        <thead>
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody id="calendarBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="apptTime"></div>
+        </div>
+
+
+        <div id="apptSummary">
+            <h2>Summary</h2>
+            <div class="appt-summary-container"></div>
+            <button class="continue-button" disabled>Continue</button>
+        </div>
+
+    </div>
+
+    <footer id="footer"></footer>
+
+    <nav id="sidenav"></nav>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>Window.jQuery || document.write('<script src="scripts/jquery-3.6.3.js"><\/script>');</script>
+    <script src="scripts/custom-elements.js"></script>
+    <script src="scripts/booking.js"></script>
+</body>
+
+</html>
